@@ -1,9 +1,12 @@
 import { useRef } from 'react'
 import About from './pages/About'
+import Academic from './pages/Academic'
 import Contact from './pages/Contact'
 import Cv from './pages/Cv'
+import Experience from './pages/Experience'
 import Home from './pages/Home'
 import Navbar from './pages/Navbar'
+import Skills from './pages/Skills'
 import Work from './pages/Work'
 import { useGsapAnimations } from './hooks/useGsapAnimations'
 import { useRoute } from './hooks/useRoute'
@@ -22,8 +25,11 @@ function App() {
       <Navbar activePage={activePage} onNavigate={navigate} onThemeToggle={toggleTheme} theme={theme} />
       <main>
         <Home />
-        <Work />
         <About />
+        <Experience />
+        <Work />
+        <Skills />
+        <Academic />
         <Cv />
         <Contact />
       </main>

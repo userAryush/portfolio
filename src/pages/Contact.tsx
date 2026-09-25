@@ -9,7 +9,7 @@ function Contact() {
     const message = String(formData.get('message') || '')
     const subject = encodeURIComponent(`Project inquiry from ${name}`)
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)
-    window.location.href = `mailto:ronitkhadka4@gmail.com?subject=${subject}&body=${body}`
+    window.location.href = `mailto:[EMAIL_ADDRESS]?subject=${subject}&body=${body}`
   }
 
   return (

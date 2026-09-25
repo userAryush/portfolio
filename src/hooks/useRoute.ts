@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 
-export const routes = ['home', 'work', 'about', 'cv', 'contact'] as const
+export const routes = ['home', 'about', 'experience', 'projects', 'skills', 'academic', 'cv', 'contact'] as const
 export type Route = typeof routes[number]
 
 const getRoute = (): Route => {
-  const route = window.location.hash.slice(1) as Route
+  const hash = window.location.hash.slice(1)
+  const route = (hash === 'work' ? 'projects' : hash) as Route
   return routes.includes(route) ? route : 'home'
 }
 

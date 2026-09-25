@@ -54,6 +54,28 @@ export function useGsapAnimations(appRef: RefObject<HTMLDivElement | null>) {
         })
       })
 
+      gsap.utils.toArray<HTMLElement>('.skill-card').forEach((card, index) => {
+        gsap.from(card, {
+          delay: (index % 3) * 0.08,
+          duration: 0.85,
+          ease: 'power3.out',
+          opacity: 0,
+          scrollTrigger: { start: 'top 85%', toggleActions: 'play reverse play reverse', trigger: card },
+          y: 40,
+        })
+      })
+
+      gsap.utils.toArray<HTMLElement>('.academic-card, .cert-card').forEach((card, index) => {
+        gsap.from(card, {
+          delay: (index % 2) * 0.1,
+          duration: 0.85,
+          ease: 'power3.out',
+          opacity: 0,
+          scrollTrigger: { start: 'top 85%', toggleActions: 'play reverse play reverse', trigger: card },
+          y: 40,
+        })
+      })
+
       gsap.from('.contact-section > *', {
         duration: 0.9,
         ease: 'power3.out',
