@@ -1,0 +1,16 @@
+:root {
+  font-family: 'DM Sans', Arial, sans-serif;
+  color: var(--ink, #1c1c1a);
+  background: var(--paper, #f5f3ee);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--paper, #f5f3ee);
+  color: var(--ink, #1c1c1a);
+  margin: 0;
+  min-width: 320px;
+  transition: background .25s ease, color .25s ease;
+}
