@@ -1,3 +1,5 @@
+import '../styles/skills.css'
+
 interface SkillCategory {
   number: string;
   title: string;
@@ -81,9 +83,12 @@ function Skills() {
   return (
     <section className="skills-section page-section" id="skills">
       <div className="section-heading">
-        <p className="eyebrow">Technical Stack / 03</p>
+        {/* <p className="eyebrow">Technical Stack / 03</p> */}
         <h2>
-          Core competencies & <em>technical toolkit.</em>
+          Technical<em> skills.</em>
+                             <span aria-hidden="true" className="work-heading-arrow">
+            ↗
+          </span>
         </h2>
       </div>
 

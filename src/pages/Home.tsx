@@ -1,3 +1,4 @@
+import '../styles/home.css'
 import { type PointerEvent, useRef } from 'react'
 import profileImage from '../assets/aryush.png'
 

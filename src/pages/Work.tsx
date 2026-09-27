@@ -1,3 +1,4 @@
+import '../styles/projects.css'
 import { type PointerEvent } from 'react';
 
 const projects = [
@@ -89,12 +90,9 @@ function Work() {
   return (
     <section className="work-section page-section" id="projects">
       <div className="section-heading">
-        <p className="eyebrow">Featured Work / 02</p>
+        {/* <p className="eyebrow">projects</p> */}
         <h2>
-          Featured projects & <em>backend systems.</em>{' '}
-          <span aria-hidden="true" className="work-heading-arrow">
-            ↗
-          </span>
+          Featured <em>projects.</em>
         </h2>
       </div>
 

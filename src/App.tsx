@@ -1,9 +1,8 @@
 import { useRef } from 'react'
 import About from './pages/About'
-import Academic from './pages/Academic'
 import Contact from './pages/Contact'
-import Cv from './pages/Cv'
 import Experience from './pages/Experience'
+import Footer from './pages/Footer'
 import Home from './pages/Home'
 import Navbar from './pages/Navbar'
 import Skills from './pages/Skills'
@@ -11,7 +10,6 @@ import Work from './pages/Work'
 import { useGsapAnimations } from './hooks/useGsapAnimations'
 import { useRoute } from './hooks/useRoute'
 import { useTheme } from './hooks/useThem'
-import './App.css'
 
 function App() {
   const appRef = useRef<HTMLDivElement>(null)
@@ -29,10 +27,9 @@ function App() {
         <Experience />
         <Work />
         <Skills />
-        <Academic />
-        <Cv />
         <Contact />
       </main>
+      <Footer />
     </div>
   )
 }

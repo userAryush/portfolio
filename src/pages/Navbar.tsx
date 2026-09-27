@@ -1,3 +1,4 @@
+import '../styles/nav.css'
 import { useLayoutEffect, useRef, useState } from 'react'
 
 type NavbarProps = {
@@ -7,7 +8,7 @@ type NavbarProps = {
   onThemeToggle: () => void
 }
 
-const pages = ['home', 'about', 'experience', 'projects', 'skills', 'academic', 'cv', 'contact'] as const
+const pages = ['home', 'about', 'experience', 'projects', 'skills', 'contact'] as const
 
 function Navbar({ activePage, theme, onNavigate, onThemeToggle }: NavbarProps) {
   const navRef = useRef<HTMLElement>(null)

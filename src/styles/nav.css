@@ -1,0 +1,115 @@
+.site-header {
+  align-items: center;
+  backdrop-filter: blur(18px) saturate(135%);
+  background: var(--header);
+  border: 1px solid rgba(255, 255, 255, .28);
+  border-bottom-color: var(--line);
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 12px 30px rgba(28, 28, 26, .08), inset 0 1px 0 rgba(255, 255, 255, .35);
+  display: flex;
+  height: 86px;
+  justify-content: space-between;
+  padding: 0 clamp(18px, 2vw, 30px);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.wordmark {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  text-decoration: none;
+}
+
+.wordmark span {
+  color: var(--coral);
+}
+
+.site-nav {
+  display: flex;
+  gap: 30px;
+  margin-left: 0;
+  padding-bottom: 9px;
+  position: relative;
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--ink);
+}
+
+.nav-indicator {
+  animation: nav-wave 1.35s ease-in-out infinite;
+  background: var(--coral);
+  border-radius: 50% 50% 45% 45%;
+  bottom: -2px;
+  height: 5px;
+  position: absolute;
+  transform-origin: center;
+  transition: left .55s cubic-bezier(.22, 1, .36, 1), width .55s cubic-bezier(.22, 1, .36, 1);
+}
+
+.availability {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.status-dot {
+  background: #77a542;
+  border-radius: 50%;
+  height: 7px;
+  width: 7px;
+}
+
+.nav-actions {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-actions .social-icon,
+.theme-toggle {
+  align-items: center;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: var(--ink);
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 34px;
+  height: 34px;
+  justify-content: center;
+  padding: 0;
+  text-decoration: none;
+  transition: background .2s, border-color .2s, color .2s, transform .2s;
+  width: 34px;
+}
+
+.nav-actions .social-icon:hover,
+.theme-toggle:hover {
+  background: var(--coral);
+  border-color: var(--coral);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.theme-toggle:hover {
+  transform: translateY(-2px) rotate(12deg);
+}
+
+.nav-actions .social-icon svg,
+.theme-toggle svg {
+  display: block;
+  flex-shrink: 0;
+  height: 17px;
+  width: 17px;
+}
