@@ -1,12 +1,17 @@
 import '../styles/about.css'
-
+import '../styles/projects.css'
 function About() {
   return (
     <section className="about-section page-section" id="about">
       <div className="about-copy">
-        <h2>
-          About<em> me.</em>
-        </h2>
+        <div className="section-heading">
+          <h2>
+            About<em> me.</em>
+            <span aria-hidden="true" className="work-heading-arrow">
+              ↗
+            </span>
+          </h2>
+        </div>
         <p className="about-lead">
           I am a Computer Science graduate and backend-oriented full-stack developer, building web applications with Python, Django, Django REST Framework, and React. My primary focus is backend development, while I also work across the frontend to build complete, practical applications.
         </p>
@@ -66,19 +71,19 @@ function About() {
       <div className="steps-row">
         <div className="step">
           <span className="step-num">01</span>
-          <h4>Understand the requirement</h4>
+          <h4>Understand & Brainstorm</h4>
         </div>
         <div className="step">
           <span className="step-num">02</span>
-          <h4>Design the system</h4>
+          <h4>Design and Visualize</h4>
         </div>
         <div className="step">
           <span className="step-num">03</span>
-          <h4>Build with Django &amp; DRF</h4>
+          <h4>Build with DRF and React</h4>
         </div>
         <div className="step">
           <span className="step-num">04</span>
-          <h4>Test relentlessly</h4>
+          <h4>Optimize & Test</h4>
         </div>
         <div className="step">
           <span className="step-num">05</span>

@@ -5,9 +5,15 @@ function Experience() {
     <section className="experience-section page-section" id="experience">
       <div className="experience-copy">
         {/* <p className="eyebrow">Experience</p> */}
-        <h2>
-          Work <em> experience.</em>
-        </h2>
+        <div className="section-heading">
+          {/* <p className="eyebrow">Technical Stack / 03</p> */}
+          <h2>
+            Work<em> expereience.</em>
+            <span aria-hidden="true" className="work-heading-arrow">
+              ↗
+            </span>
+          </h2>
+        </div>
       </div>
 
       <article className="experience-card">
@@ -42,7 +48,7 @@ function Experience() {
           <h4 className="system-title">Digital Biratnagar</h4>
           <p className="system-subtitle">Digital Palika Mobile Application</p>
           <p className="system-desc">
-            Engineered backend modules for administration, revenue, health, legal, judicial committee, welfare, planning, and finance. Designed multi-module REST endpoints, implemented secure file uploads, role permissions, pagination, and optimized database queries.
+            Extended and maintained a production government application by developing backend modules for administration, revenue, health, legal and judicial services, welfare, planning, and finance. Implemented REST APIs, secure file uploads, role-based permissions, pagination, and database query optimization.
           </p>
           <div className="system-footer-tech">
             <span>Django</span>

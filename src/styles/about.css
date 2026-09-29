@@ -8,7 +8,7 @@
 
 .steps-heading {
     color: var(--muted);
-    font: 500 11px 'DM Mono', monospace;
+    font: 500 11px 'Inter', sans-serif;
     letter-spacing: .05em;
     margin: 0 0 36px;
     text-transform: uppercase;
@@ -45,7 +45,9 @@
     border-radius: 50%;
     color: var(--coral);
     display: flex;
-    font: 500 12px 'DM Mono', monospace;
+    font-family: 'DM Serif Display', serif;
+    font-size: 12px;
+    font-weight: 400;
     height: 34px;
     justify-content: center;
     left: -52px;
@@ -55,9 +57,9 @@
 }
 
 .step h4 {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Serif Display', serif;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: -.01em;
     margin: 2px 0 8px;
 }
@@ -115,11 +117,13 @@
     text-align: center;
 }
 
-.about-copy h2 {
-    font-size: clamp(34px, 4vw, 54px);
-    letter-spacing: -.04em;
-    line-height: 1.1;
-    margin: 0 0 26px;
+.about-copy .section-heading {
+    display: block;
+    margin: 0 auto 26px;
+}
+
+.about-copy .section-heading h2 {
+    margin: 0 auto;
 }
 
 .about-lead {
@@ -143,7 +147,7 @@
 
 .steps-heading {
     color: var(--muted);
-    font: 500 11px 'DM Mono', monospace;
+    font: 500 11px 'Inter', sans-serif;
     letter-spacing: .05em;
     margin: 96px 0 48px;
     text-align: center;
@@ -179,7 +183,7 @@
     border-radius: 999px;
     cursor: pointer;
     display: inline-flex;
-    font: 500 11px 'DM Mono', monospace;
+    font: 500 11px 'Inter', sans-serif;
     gap: 8px;
     letter-spacing: .04em;
     padding: 10px 20px;
@@ -245,7 +249,9 @@
     border-radius: 50%;
     color: var(--coral);
     display: flex;
-    font: 500 12px 'DM Mono', monospace;
+    font-family: 'DM Serif Display', serif;
+    font-size: 12px;
+    font-weight: 400;
     height: 34px;
     justify-content: center;
     margin-bottom: 16px;
@@ -253,9 +259,9 @@
 }
 
 .step h4 {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Serif Display', serif;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: -.01em;
     margin: 0;
     max-width: 16ch;
@@ -292,5 +298,43 @@
     .step h4 {
         max-width: none;
         text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-copy {
+        padding: 0 16px;
+    }
+
+    .about-lead {
+        font-size: 16px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .about-cv-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cv-btn {
+        justify-content: center;
+    }
+
+    .steps-heading {
+        font-size: 10px;
+    }
+
+    .step h4 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-btn {
+        padding: 9px 16px;
+        font-size: 10px;
     }
 }

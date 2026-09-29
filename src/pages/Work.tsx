@@ -93,6 +93,9 @@ function Work() {
         {/* <p className="eyebrow">projects</p> */}
         <h2>
           Featured <em>projects.</em>
+          <span aria-hidden="true" className="work-heading-arrow">
+            ↗
+          </span>
         </h2>
       </div>
 

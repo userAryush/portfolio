@@ -13,7 +13,7 @@
 
 .footer-text,
 .footer-role {
-  font: 11px 'DM Mono', monospace;
+  font: 11px 'Inter', sans-serif;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0;
@@ -31,5 +31,16 @@
   .footer-content {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-footer {
+    padding: 20px 0;
+  }
+
+  .footer-text,
+  .footer-role {
+    font-size: 10px;
   }
 }

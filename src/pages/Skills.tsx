@@ -60,11 +60,11 @@ const skillCategories: SkillCategory[] = [
     number: '05',
     title: 'API & Development Tools',
     tag: 'WORKFLOW & TOOLING',
-    skills: [
-      'Git',
-      'Postman',
-      'Swagger',
+        skills: [
+      'Git And Github',
+      'Unity',
       'Figma',
+      'Postman and Swagger'
     ],
   },
   {
@@ -75,6 +75,37 @@ const skillCategories: SkillCategory[] = [
       'NumPy',
       'Pandas',
       'Matplotlib',
+    ],
+  },
+  {
+    number: '07',
+    title: 'Certifications',
+    tag: 'CERTIFICATIONS',
+    skills: [
+      'Python with Django - Mindrisers',
+      'Database Training - Herald College Kathmandu',
+      'Advanced Django - Coursera',
+    ],
+  },
+  {
+    number: '08',
+    title: 'Programming Language',
+    tag: 'Programming Language',
+    skills: [
+      'Python',
+      'C',
+      'JavaScript',
+      'Java'
+    ],
+  },
+  {
+    number: '09',
+    title: 'Testing & Quality',
+    tag: 'TESTING & QUALITY',
+    skills: [
+      'Manual Testing',
+      'API Testing',
+      'Unit Testing',
     ],
   },
 ];

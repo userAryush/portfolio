@@ -13,6 +13,7 @@ const pages = ['home', 'about', 'experience', 'projects', 'skills', 'contact'] a
 function Navbar({ activePage, theme, onNavigate, onThemeToggle }: NavbarProps) {
   const navRef = useRef<HTMLElement>(null)
   const [indicator, setIndicator] = useState({ left: 0, width: 0 })
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useLayoutEffect(() => {
     const updateIndicator = () => {
@@ -28,18 +29,36 @@ function Navbar({ activePage, theme, onNavigate, onThemeToggle }: NavbarProps) {
     return () => window.removeEventListener('resize', updateIndicator)
   }, [activePage])
 
+  const handleMobileNavClick = (page: string) => {
+    onNavigate(page)
+    setIsMobileMenuOpen(false)
+  }
+
   return (
     <header className="site-header">
       <a className="wordmark" href="#home" aria-label="Aryush Khatri home">
         Aryush<span>.py</span>
       </a>
 
-      <nav className="site-nav" aria-label="Main navigation" ref={navRef}>
+      <button
+        className="mobile-menu-toggle"
+        aria-label="Toggle navigation menu"
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+      >
+        <span className={`hamburger ${isMobileMenuOpen ? 'open' : ''}`}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <nav className={`site-nav ${isMobileMenuOpen ? 'mobile-open' : ''}`} aria-label="Main navigation" ref={navRef}>
         {pages.map((page) => (
-          <a className={activePage === page ? 'active' : ''}
+          <a 
+            className={activePage === page ? 'active' : ''}
             href={`#${page}`}
             key={page}
-            onClick={() => onNavigate(page)}
+            onClick={() => handleMobileNavClick(page)}
           >
             {page}
           </a>

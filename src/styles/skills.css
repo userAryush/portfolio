@@ -67,15 +67,15 @@
 
 .skill-tag {
   color: var(--coral);
-  font: 500 11px 'DM Mono', monospace;
+  font: 500 11px 'Inter', sans-serif;
   letter-spacing: .06em;
 }
 
 .skill-card-title {
   color: var(--ink);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'DM Serif Display', serif;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -.02em;
   line-height: 1.25;
   margin: 0;
@@ -103,7 +103,7 @@
 
 .skill-count {
   color: #77a542;
-  font: 500 10.5px 'DM Mono', monospace;
+  font: 500 10.5px 'Inter', sans-serif;
   letter-spacing: .04em;
 }
 
@@ -125,7 +125,7 @@
   border-radius: 6px;
   color: var(--ink);
   display: flex;
-  font-family: 'DM Mono', monospace;
+  font-family: 'Inter', sans-serif;
   font-size: 13.5px;
   gap: 10px;
   line-height: 1.4;
@@ -164,5 +164,63 @@
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 64px 16px;
+  }
+
+  .skills-section .section-heading {
+    padding: 0;
+  }
+
+  .skills-section .section-heading h2 {
+    font-size: clamp(28px, 8vw, 42px);
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .skill-card {
+    padding: 20px 18px;
+  }
+
+  .skill-card-title {
+    font-size: 18px;
+  }
+
+  .skill-item {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-section .section-heading h2 {
+    font-size: clamp(24px, 10vw, 36px);
+  }
+
+  .skill-card {
+    padding: 18px 16px;
+  }
+
+  .skill-card-title {
+    font-size: 16px;
+  }
+
+  .skill-tag {
+    font-size: 10px;
+  }
+
+  .skill-count {
+    font-size: 9.5px;
+  }
+
+  .skill-item {
+    font-size: 12px;
   }
 }

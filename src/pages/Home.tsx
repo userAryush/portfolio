@@ -47,8 +47,7 @@ function Home() {
           </span>
         </h1>
         <p className="hero-summary">
-          A Python developer working with Django, Django REST Framework, PostgreSQL, and<br className="hero-summary-break" />
-          React to build practical, maintainable APIs and web applications for real-world use.
+          Hi, I'm <span className="hero-name-highlight">Aryush Khatri</span>. A Python developer working with Django, DRF, PostgreSQL, and React to build practical, maintainable APIs and web applications.
         </p>
         <div className="hero-cta-group">
           <div className="hero-actions">
@@ -60,7 +59,7 @@ function Home() {
             </a>
             <a
               className="hero-btn hero-btn-secondary"
-              href="/resume.pdf"
+              href="/CV.pdf"
               target="_blank"
               rel="noreferrer"
             >
