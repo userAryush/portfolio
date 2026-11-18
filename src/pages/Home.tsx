@@ -59,7 +59,7 @@ function Home() {
             </a>
             <a
               className="hero-btn hero-btn-secondary"
-              href="/CV.pdf"
+              href="/AryushKhatri_CV.pdf"
               target="_blank"
               rel="noreferrer"
             >

@@ -82,8 +82,8 @@ const skillCategories: SkillCategory[] = [
     title: 'Certifications',
     tag: 'CERTIFICATIONS',
     skills: [
-      'Python with Django - Mindrisers',
       'Database Training - Herald College Kathmandu',
+      'Full Stack Web Development - Herald College Kathmandu',
       'Advanced Django - Coursera',
     ],
   },

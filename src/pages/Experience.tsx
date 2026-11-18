@@ -22,7 +22,7 @@ function Experience() {
           <h3 className="experience-title">Backend Development Intern</h3>
           <p className="experience-company">MindRisers Technology</p>
           <div className="experience-date-badge">
-            <span>Jul 25, 2026 – Sept 25, 2026</span>
+            <span>Sep 1, 2026 – Dec 9, 2026</span>
             <span className="experience-duration">3 Months</span>
           </div>
         </div>

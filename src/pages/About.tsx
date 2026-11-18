@@ -28,7 +28,7 @@ function About() {
         <div className="cv-links about-cv-links">
           <a
             className="cv-btn cv-btn-primary"
-            href="/CV.pdf"
+            href="/AryushKhatri_CV.pdf"
             rel="noreferrer"
             target="_blank"
           >
@@ -47,7 +47,7 @@ function About() {
           <a
             className="cv-btn cv-btn-secondary"
             download="Aryush-Khatri-CV.pdf"
-            href="/CV.pdf"
+            href="/AryushKhatri_CV.pdf"
           >
             <svg
               aria-hidden="true"
